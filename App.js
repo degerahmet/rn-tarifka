@@ -3,7 +3,6 @@ import React from 'react';
 import { NavigationContainer } from "@react-navigation/native";
 
 
-import Header from './src/components/Header';
 import {createStackNavigator} from "@react-navigation/stack";
 import Categories from './src/pages/Categories';
 import Meals from './src/pages/Meals';
@@ -15,7 +14,6 @@ const Stack = createStackNavigator();
 export default function App() {
   return (
       <NavigationContainer>
-        <Header/>
         <Stack.Navigator>
           <Stack.Screen options={{
             headerShown: false,}} name="Categories" component={Categories} />
